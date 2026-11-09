@@ -1,0 +1,859 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AURORA - Discover destinations, cultures, experiences and extraordinary journeys around the world.">
+    <title>AURORA | Discover Beyond Ordinary</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <h1>AURORA<span>.</span></h1>
+        <p>Discover beyond ordinary.</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">AURORA<span>.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#destinations">Explore</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#stays">Stays</a>
+            <a href="#journal">Journal</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+            <a href="#planner" class="header-btn">Plan a Trip ↗</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- 01. HOME -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="eyebrow">THE WORLD IS YOURS TO EXPLORE</span>
+
+                <h1>Discover beyond <span>ordinary.</span></h1>
+
+                <p>
+                    Find extraordinary destinations, experience different
+                    cultures and create memories that last forever.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#destinations" class="primary-btn">Explore destinations ↗</a>
+                    <a href="#experiences" class="secondary-btn">Discover experiences</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>120+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div>
+                        <h3>50K+</h3>
+                        <p>Explorers</p>
+                    </div>
+                    <div>
+                        <h3>300+</h3>
+                        <p>Experiences</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-label">
+                    <span>FEATURED DESTINATION</span>
+                    <h3>Amalfi Coast, Italy</h3>
+                    <p>Discover the Mediterranean beauty.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- 02. SEARCH -->
+        <section class="search-section">
+            <div class="search-box">
+                <div class="search-field">
+                    <label>WHERE TO?</label>
+                    <input type="text" id="destinationSearch"
+                        placeholder="Search destinations...">
+                </div>
+
+                <div class="search-field">
+                    <label>EXPERIENCE</label>
+                    <select id="experienceSelect">
+                        <option value="">Any experience</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Food">Food</option>
+                    </select>
+                </div>
+
+                <a href="#destinations" class="search-btn" id="searchBtn">
+                    Search ↗
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 03. EXPLORE -->
+        <section class="section explore-section" id="explore">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOUR NEXT ADVENTURE</span>
+                    <h2>Explore the <span>unknown.</span></h2>
+                </div>
+                <a href="#destinations" class="text-link">Discover all ↗</a>
+            </div>
+
+            <div class="explore-grid">
+
+                <article class="explore-card explore-large">
+                    <div class="explore-card-content">
+                        <span>01 / EXPLORE</span>
+                        <h3>Find your next escape.</h3>
+                        <a href="#destinations">Start exploring ↗</a>
+                    </div>
+                </article>
+
+                <article class="explore-card explore-small">
+                    <div class="explore-card-content">
+                        <span>02 / EXPERIENCE</span>
+                        <h3>Live extraordinary moments.</h3>
+                        <a href="#experiences">Discover more ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 04. DESTINATIONS -->
+        <section class="section" id="destinations">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">PLACES WORTH VISITING</span>
+                    <h2>Popular <span>destinations.</span></h2>
+                </div>
+                <a href="#planner" class="text-link">Plan a journey ↗</a>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Africa">Africa</button>
+                <button class="filter-btn" data-filter="Europe">Europe</button>
+                <button class="filter-btn" data-filter="Asia">Asia</button>
+                <button class="filter-btn" data-filter="America">America</button>
+            </div>
+
+            <div class="destination-grid" id="destinationGrid">
+
+                <article class="destination-card" data-category="Europe" data-name="Paris">
+                    <div class="destination-image paris">
+                        <span class="destination-tag">POPULAR</span>
+                        <button class="favorite-btn" aria-label="Save Paris">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>Paris</h3>
+                            <p>France, Europe</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Africa" data-name="Cape Town South Africa">
+                    <div class="destination-image cape-town">
+                        <span class="destination-tag">ADVENTURE</span>
+                        <button class="favorite-btn" aria-label="Save Cape Town">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>Cape Town</h3>
+                            <p>South Africa, Africa</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Asia" data-name="Tokyo Japan">
+                    <div class="destination-image tokyo">
+                        <span class="destination-tag">CULTURE</span>
+                        <button class="favorite-btn" aria-label="Save Tokyo">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>Tokyo</h3>
+                            <p>Japan, Asia</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="America" data-name="New York USA">
+                    <div class="destination-image new-york">
+                        <span class="destination-tag">CITY LIFE</span>
+                        <button class="favorite-btn" aria-label="Save New York">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>New York</h3>
+                            <p>USA, America</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Africa" data-name="Zanzibar Tanzania">
+                    <div class="destination-image zanzibar">
+                        <span class="destination-tag">BEACH</span>
+                        <button class="favorite-btn" aria-label="Save Zanzibar">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>Zanzibar</h3>
+                            <p>Tanzania, Africa</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Europe" data-name="Santorini Greece">
+                    <div class="destination-image santorini">
+                        <span class="destination-tag">RELAXATION</span>
+                        <button class="favorite-btn" aria-label="Save Santorini">♡</button>
+                    </div>
+                    <div class="destination-info">
+                        <div>
+                            <h3>Santorini</h3>
+                            <p>Greece, Europe</p>
+                        </div>
+                        <span>↗</span>
+                    </div>
+                </article>
+
+            </div>
+            <p class="empty-message" id="emptyMessage" hidden>No destinations found.</p>
+        </section>
+
+
+        <!-- 05. EXPERIENCES -->
+        <section class="section experiences-section" id="experiences">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">MAKE EVERY MOMENT COUNT</span>
+                    <h2>Choose your <span>experience.</span></h2>
+                </div>
+            </div>
+
+            <div class="experience-grid">
+
+                <article class="experience-card adventure">
+                    <span>01</span>
+                    <h3>Adventure</h3>
+                    <p>Discover the extraordinary outdoors.</p>
+                    <a href="#planner">Explore ↗</a>
+                </article>
+
+                <article class="experience-card beaches">
+                    <span>02</span>
+                    <h3>Beach escapes</h3>
+                    <p>Find peace beside beautiful waters.</p>
+                    <a href="#planner">Explore ↗</a>
+                </article>
+
+                <article class="experience-card culture">
+                    <span>03</span>
+                    <h3>Culture</h3>
+                    <p>Experience traditions and heritage.</p>
+                    <a href="#planner">Explore ↗</a>
+                </article>
+
+                <article class="experience-card nature">
+                    <span>04</span>
+                    <h3>Nature</h3>
+                    <p>Reconnect with the natural world.</p>
+                    <a href="#planner">Explore ↗</a>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 06. ACCOMMODATION -->
+        <section class="section" id="stays">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">STAY SOMEWHERE SPECIAL</span>
+                    <h2>Exceptional <span>stays.</span></h2>
+                </div>
+            </div>
+
+            <div class="stays-grid">
+
+                <article class="stay-card">
+                    <div class="stay-image stay-one"></div>
+                    <div class="stay-info">
+                        <span>PRIVATE VILLA</span>
+                        <h3>Ocean View Retreat</h3>
+                        <p>Maldives · Beachfront</p>
+                        <a href="#planner">Discover stay ↗</a>
+                    </div>
+                </article>
+
+                <article class="stay-card">
+                    <div class="stay-image stay-two"></div>
+                    <div class="stay-info">
+                        <span>LUXURY HOTEL</span>
+                        <h3>The Mountain Escape</h3>
+                        <p>Switzerland · Mountain</p>
+                        <a href="#planner">Discover stay ↗</a>
+                    </div>
+                </article>
+
+                <article class="stay-card">
+                    <div class="stay-image stay-three"></div>
+                    <div class="stay-info">
+                        <span>DESIGN HOTEL</span>
+                        <h3>Urban Living</h3>
+                        <p>Tokyo · City Centre</p>
+                        <a href="#planner">Discover stay ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 07. FOOD AND DINING -->
+        <section class="section food-section" id="food">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">TASTE THE WORLD</span>
+                    <h2>A world of <span>flavours.</span></h2>
+                </div>
+            </div>
+
+            <div class="food-grid">
+                <article class="food-card">
+                    <div class="food-image food-one"></div>
+                    <h3>African Cuisine</h3>
+                    <p>Rich flavours, traditional recipes and culture.</p>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image food-two"></div>
+                    <h3>Asian Cuisine</h3>
+                    <p>Discover extraordinary culinary traditions.</p>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image food-three"></div>
+                    <h3>European Cuisine</h3>
+                    <p>Explore classic and contemporary dishes.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- 08. CULTURE -->
+        <section class="section culture-section" id="culture">
+
+            <div class="culture-content">
+                <span class="eyebrow">MORE THAN JUST TRAVEL</span>
+                <h2>Discover the soul of <span>every place.</span></h2>
+                <p>
+                    Every destination has a story. Explore its people,
+                    traditions, architecture, music and heritage.
+                </p>
+                <a href="#journal" class="primary-btn">Explore cultures ↗</a>
+            </div>
+
+            <div class="culture-image"></div>
+        </section>
+
+
+        <!-- 09. EVENTS -->
+        <section class="section" id="events">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPERIENCES THAT BRING PEOPLE TOGETHER</span>
+                    <h2>Upcoming <span>events.</span></h2>
+                </div>
+            </div>
+
+            <div class="events-grid">
+
+                <article class="event-card">
+                    <div class="event-image event-one"></div>
+                    <div class="event-info">
+                        <span>FESTIVAL</span>
+                        <h3>Colours of Culture</h3>
+                        <p>Rio de Janeiro, Brazil</p>
+                        <a href="#contact">Discover event ↗</a>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-image event-two"></div>
+                    <div class="event-info">
+                        <span>ART & MUSIC</span>
+                        <h3>City Lights Festival</h3>
+                        <p>Tokyo, Japan</p>
+                        <a href="#contact">Discover event ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 10. TRIP PLANNER -->
+        <section class="section planner-section" id="planner">
+
+            <div class="planner-content">
+                <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+                <h2>Build your own <span>adventure.</span></h2>
+                <p>
+                    Create a personal travel plan and organize
+                    your next unforgettable journey.
+                </p>
+            </div>
+
+            <div class="planner-box">
+
+                <form id="tripForm">
+
+                    <div class="form-group">
+                        <label for="tripDestination">Destination</label>
+                        <input type="text" id="tripDestination"
+                            placeholder="Where do you want to go?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tripStart">Departure date</label>
+                        <input type="date" id="tripStart" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tripEnd">Return date</label>
+                        <input type="date" id="tripEnd" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tripPeople">Travellers</label>
+                        <input type="number" id="tripPeople"
+                            min="1" value="1" required>
+                    </div>
+
+                    <button type="submit" class="primary-btn">
+                        Create my trip ↗
+                    </button>
+
+                </form>
+
+                <div id="tripResult" class="trip-result"></div>
+
+            </div>
+        </section>
+
+
+        <!-- 11. BUDGET PLANNER -->
+        <section class="section budget-section" id="budget">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">TRAVEL SMARTER</span>
+                    <h2>Plan your <span>budget.</span></h2>
+                </div>
+            </div>
+
+            <div class="budget-box">
+
+                <div class="budget-inputs">
+
+                    <div class="form-group">
+                        <label for="transportCost">Transportation (₦)</label>
+                        <input type="number" id="transportCost" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hotelCost">Accommodation (₦)</label>
+                        <input type="number" id="hotelCost" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foodCost">Food (₦)</label>
+                        <input type="number" id="foodCost" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="activityCost">Activities (₦)</label>
+                        <input type="number" id="activityCost" placeholder="0">
+                    </div>
+
+                    <button class="primary-btn" id="calculateBudget">
+                        Calculate budget ↗
+                    </button>
+
+                </div>
+
+                <div class="budget-result">
+                    <span>ESTIMATED TOTAL</span>
+                    <h2 id="budgetTotal">₦0</h2>
+                    <p>Your estimated travel expenses.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 12. TRAVEL JOURNAL -->
+        <section class="section" id="journal">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">STORIES FROM AROUND THE WORLD</span>
+                    <h2>The travel <span>journal.</span></h2>
+                </div>
+                <a href="#newsletter" class="text-link">Read more ↗</a>
+            </div>
+
+            <div class="journal-grid">
+
+                <article class="journal-card">
+                    <div class="journal-image journal-one"></div>
+                    <div class="journal-info">
+                        <span>TRAVEL GUIDE · 8 MIN READ</span>
+                        <h3>10 beautiful places you should experience once.</h3>
+                        <p>Explore destinations that deserve a place on your bucket list.</p>
+                        <a href="#newsletter">Read article ↗</a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-image journal-two"></div>
+                    <div class="journal-info">
+                        <span>CULTURE · 6 MIN READ</span>
+                        <h3>Discovering the beauty of African traditions.</h3>
+                        <p>A journey through heritage, art, food and identity.</p>
+                        <a href="#newsletter">Read article ↗</a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-image journal-three"></div>
+                    <div class="journal-info">
+                        <span>ADVENTURE · 5 MIN READ</span>
+                        <h3>Why travelling changes the way you see the world.</h3>
+                        <p>Discover the value of exploring beyond familiar places.</p>
+                        <a href="#newsletter">Read article ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 13. PHOTOGRAPHY -->
+        <section class="section gallery-section" id="gallery">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">THE WORLD THROUGH OUR LENS</span>
+                    <h2>Visual <span>stories.</span></h2>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-one"></div>
+                <div class="gallery-item gallery-two"></div>
+                <div class="gallery-item gallery-three"></div>
+                <div class="gallery-item gallery-four"></div>
+                <div class="gallery-item gallery-five"></div>
+            </div>
+        </section>
+
+
+        <!-- 14. COMMUNITY -->
+        <section class="section community-section" id="community">
+
+            <span class="eyebrow">TRAVEL IS BETTER TOGETHER</span>
+            <h2>Meet the global <span>community.</span></h2>
+
+            <p>
+                Connect with explorers, exchange experiences and
+                get inspired by journeys from around the world.
+            </p>
+
+            <a href="#contact" class="primary-btn">Join the community ↗</a>
+
+            <div class="community-stats">
+                <div><h3>50K+</h3><p>Explorers</p></div>
+                <div><h3>120+</h3><p>Countries</p></div>
+                <div><h3>10K+</h3><p>Travel stories</p></div>
+            </div>
+        </section>
+
+
+        <!-- 15. TRAVEL DEALS -->
+        <section class="section deals-section" id="deals">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">MORE ADVENTURE, LESS STRESS</span>
+                    <h2>Discover travel <span>deals.</span></h2>
+                </div>
+            </div>
+
+            <div class="deals-box">
+                <div>
+                    <span>EXCLUSIVE DISCOVERIES</span>
+                    <h2>Your next journey could be closer than you think.</h2>
+                    <p>Explore inspiring destinations and travel opportunities.</p>
+                </div>
+                <a href="#planner" class="primary-btn">Plan a trip ↗</a>
+            </div>
+        </section>
+
+
+        <!-- 16. SUSTAINABILITY -->
+        <section class="section sustainability-section" id="sustainability">
+
+            <div class="sustainability-image"></div>
+
+            <div class="sustainability-content">
+                <span class="eyebrow">EXPLORE RESPONSIBLY</span>
+                <h2>Protect the places we <span>love.</span></h2>
+                <p>
+                    Responsible travel means respecting local communities,
+                    protecting nature and preserving cultural heritage.
+                </p>
+                <a href="#about" class="text-link">Learn more ↗</a>
+            </div>
+        </section>
+
+
+        <!-- 17. TESTIMONIALS -->
+        <section class="section testimonials-section" id="testimonials">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">TRAVELLER STORIES</span>
+                    <h2>Experiences that <span>inspire.</span></h2>
+                </div>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "Discovering new places and learning about
+                        different cultures has completely changed my
+                        perspective on travelling."
+                    </p>
+                    <h4>Alex Morgan</h4>
+                    <span>Traveller</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "The best journeys are the ones that introduce
+                        you to new people, beautiful places and
+                        unforgettable experiences."
+                    </p>
+                    <h4>Sarah Williams</h4>
+                    <span>Adventure Explorer</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 18. ABOUT -->
+        <section class="section about-section" id="about">
+
+            <div class="about-content">
+                <span class="eyebrow">THE STORY BEHIND AURORA</span>
+                <h2>We believe the world is full of <span>wonder.</span></h2>
+                <p>
+                    AURORA is a discovery platform created to inspire
+                    exploration, celebrate culture and bring the beauty
+                    of the world closer to everyone.
+                </p>
+                <a href="#contact" class="primary-btn">Get to know us ↗</a>
+            </div>
+
+            <div class="about-image"></div>
+        </section>
+
+
+        <!-- 19. NEWSLETTER -->
+        <section class="newsletter-section" id="newsletter">
+
+            <span class="eyebrow">A LITTLE INSPIRATION FOR YOUR INBOX</span>
+            <h2>Never stop <span>exploring.</span></h2>
+            <p>Get travel inspiration, destination guides and stories.</p>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail"
+                    placeholder="Enter your email address" required>
+                <button type="submit">Subscribe ↗</button>
+            </form>
+
+            <p id="newsletterMessage"></p>
+        </section>
+
+
+        <!-- 20. CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-content">
+                <span class="eyebrow">LET'S CONNECT</span>
+                <h2>Have something <span>to share?</span></h2>
+                <p>
+                    Questions, suggestions or partnership opportunities?
+                    We'd love to hear from you.
+                </p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-group">
+                    <label for="contactName">Your name</label>
+                    <input type="text" id="contactName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Your email</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Your message</label>
+                    <textarea id="contactMessage" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="primary-btn">Send message ↗</button>
+                <p id="contactFeedback"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">AURORA<span>.</span></a>
+                <p>Discover beyond ordinary.</p>
+                <p>Explore the world. Experience life.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#destinations">Destinations</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#stays">Accommodation</a>
+                <a href="#food">Food & Dining</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Discover</h4>
+                <a href="#culture">Culture</a>
+                <a href="#events">Events</a>
+                <a href="#journal">Travel Journal</a>
+                <a href="#gallery">Photography</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#about">About Us</a>
+                <a href="#community">Community</a>
+                <a href="#contact">Contact</a>
+                <a href="#sustainability">Sustainability</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AURORA. All rights reserved.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!-- DESTINATION DETAILS MODAL -->
+<div class="destination-modal" id="destinationModal">
+    <div class="destination-modal-content">
+
+        <button class="modal-close" id="closeDestinationModal">
+            &times;
+        </button>
+
+        <img src="" alt="Destination" id="modalImage">
+
+        <div class="modal-info">
+            <span class="modal-tag">EXPLORE DESTINATION</span>
+
+            <h2 id="modalTitle">Destination Name</h2>
+
+            <p id="modalDescription">
+                Discover amazing places around the world.
+            </p>
+
+            <h3>Top Highlights</h3>
+            <ul id="modalHighlights"></ul>
+
+            <button class="modal-plan-btn" id="modalPlanBtn">
+                Plan a Trip
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
